@@ -1,0 +1,26 @@
+Asertions:
+assertEquals(): verifies that two values are equal. 
+assertSame(): verifies that two objects are equal. 
+assertTrue(): verifies that a condition is true. 
+assertFalse(): verifies that a condition is false. 
+assertNull(): verifies that an object is null. 
+assertNotNull(): verifies that an object is not null. 
+assertArrayEquals(): verifies that two arrays are equal. 
+assertIterableEquals(): verifies that two iterables are equal. 
+assertLinesMatch(): verifies that two lists of strings are equal.
+assertTimeout(): verifies that a task completes within a specified time.
+
+Class hierarchy for ArrayIndexOutOfBoundsException:
+java.lang.Object
+java.lang.Throwable
+java.lang.Exception
+java.lang.RuntimeException
+java.lang.IndexOutOfBoundsException
+java.lang.ArrayIndexOutOfBoundsException
+
+Class hierarchy for arithmeticException
+java.lang.Object
+java.lang.Throwable
+java.lang.Exception
+java.lang.RuntimeException
+java.lang.ArithmeticException
