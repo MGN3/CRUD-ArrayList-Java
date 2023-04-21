@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"practica2_MarcelinoGil","l":"ArrayListUtilities"},{"p":"practica2_MarcelinoGil","l":"Controller"},{"p":"practica2_MarcelinoGil","l":"Technology"},{"p":"practica2_MarcelinoGil","l":"Utilities"},{"p":"practica2_MarcelinoGil","l":"WebPage"}];updateSearchResults();
