@@ -21,8 +21,8 @@ public class Utilities {
 		System.out.println("\u001B[107m" + "\u001B[32m" + "+--Marcelino Gil Nombela CRUD ArrayList System--+");
 		System.out.print("\u001B[0m");
 		System.out.println("\u001B[32m" + "1-Create");
-		System.out.println("\u001B[32m" + "2-Find/read");
-		System.out.println("\u001B[32m" + "3-Update/Modify");
+		System.out.println("\u001B[32m" + "2-Find");
+		System.out.println("\u001B[32m" + "3-Update");
 		System.out.println("\u001B[32m" + "4-Remove");
 		System.out.println("\u001B[32m" + "5-Exit program");
 		System.out.println("\u001B[0m");
@@ -64,10 +64,11 @@ public class Utilities {
 			System.out.println(message);
 
 			chainString = reader.nextLine();
-			if (chainString.isEmpty()) {
+			if (chainString.trim().isEmpty()) {
 				System.out.println("Error. Invalid input.");
 			}
-		} while (chainString.isEmpty()); // To avoid entering a null value when pressing 'enter'.
+		} while (chainString.trim().isEmpty()); // To avoid entering a null value when pressing
+												// 'enter'.
 
 		return chainString;
 	}
@@ -93,7 +94,6 @@ public class Utilities {
 		String numeros = "0123456789"; // también se puede comprobar si son número por codigo ASCII
 
 		// LA MANERA CORRECTA DE BUSCAR UN VALOR DENTRO DE UN ARRAY O DE UNA CADENA
-
 		while (contador < longitud && valido) {
 			if (numeros.indexOf(cadena.charAt(contador)) == -1) {
 				valido = false;
@@ -140,7 +140,6 @@ public class Utilities {
 		return selectorInt;
 	}
 
-	
 	/**
 	 * <ul>
 	 * <li>This method receives a String and returns the charAt(0) when the String
@@ -176,30 +175,6 @@ public class Utilities {
 		System.out.println('\n');
 		return selectorChar;
 	}
-	
-	
-	public static ArrayList<Technology> getTechArrayList(){
-		ArrayList<Technology> sampleTech = new ArrayList<Technology>();
-		
-		
-		
-		return sampleTech;
-	}
-	
-	
-	public static ArrayList<WebPage> webArrayList(int websNumber) {
-		ArrayList<WebPage> webs = new ArrayList<WebPage>();
-		ArrayList<Technology> techStack = new ArrayList<Technology>();
-		
-		for (int i = 0; i < websNumber; i++) {
-			System.out.println("WebPage number " + (i + 1));
-			System.out.print("Ingrese el nombre del objeto: ");
-			webs.add(new WebPage(Utilities.getString("Introduce the name of the web: "),
-					Utilities.getString("Introduce the URL: "),
-					Utilities.getIntBetween(1, 10000000, "Introduce the budget of the project: "), techStack));
-		}
-
-		return webs;
-	}
 
 }
+
