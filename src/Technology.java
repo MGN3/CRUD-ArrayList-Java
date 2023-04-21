@@ -1,7 +1,11 @@
 package practica2_MarcelinoGil;
 
-import java.util.ArrayList;
-
+/**
+ * @description This class contains the attributes of Technology object and the basic predefined methods
+ * @author Marcelino Gil Nombela
+ * @version 1.0
+ * @since 09/04/2023
+ */
 public class Technology {
 
 	private String techName;
