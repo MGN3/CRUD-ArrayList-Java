@@ -24,7 +24,6 @@ class UtilitiesTest {
 	public void testMainMenu() {
 
 		String expectedOutput;
-
 		ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
 		System.setOut(new PrintStream(outContent));
@@ -33,13 +32,13 @@ class UtilitiesTest {
 
 		expectedOutput = "\u001B[107m" + "\u001B[32m" + "+--Marcelino Gil Nombela CRUD ArrayList System--+"
 				+ System.lineSeparator() + "\u001B[0m" + "\u001B[32m" + "1-Create" + System.lineSeparator()
-				+ "\u001B[32m" + "2-Find/read" + System.lineSeparator() + "\u001B[32m" + "3-Update/Modify"
+				+ "\u001B[32m" + "2-Find" + System.lineSeparator() + "\u001B[32m" + "3-Update"
 				+ System.lineSeparator() + "\u001B[32m" + "4-Remove" + System.lineSeparator() + "\u001B[32m"
 				+ "5-Exit program" + System.lineSeparator() + "\u001B[0m" + System.lineSeparator();
-		assertEquals(outContent.toString(), expectedOutput);
+		assertEquals(expectedOutput, outContent.toString());
 	}
 
-	/** This method is not implemented since it's deprecated */
+	/** Deprecated */
 	@Test
 	public void testGetInt() {
 		// deprecated
